@@ -499,14 +499,19 @@ p { margin: 0 0 1em; }
 .callout {
   border-left: 4px solid var(--accent-amber);
   background: #fff8eb;
+  color: var(--ink-900);
   padding: 16px 18px; border-radius: 0 var(--radius-md) var(--radius-md) 0;
   margin: 16px 0;
 }
 .callout.info { border-color: var(--accent-sky); background: #ecf4ff; }
 .callout.warn { border-color: var(--accent-coral); background: #fdeee9; }
 .callout.note { border-color: var(--pitch-500); background: var(--pitch-100); }
-.callout p { margin: 0; }
+.callout p { margin: 0; color: var(--ink-900); }
+.callout a { color: var(--pitch-800); }
 .callout strong { color: var(--ink-900); }
+/* Ensure callouts stay readable when nested inside .section-dark */
+.section-dark .callout, .section-dark .callout p, .section-dark .callout strong { color: var(--ink-900); }
+.section-dark .callout a { color: var(--pitch-800); }
 
 /* Source citation list */
 .sources {
