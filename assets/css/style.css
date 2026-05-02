@@ -217,59 +217,14 @@ p { margin: 0 0 1em; }
 .hero-art {
   position: relative; aspect-ratio: 4/3;
   border-radius: var(--radius-lg);
-  background: linear-gradient(135deg, var(--pitch-700), var(--pitch-900));
   box-shadow: var(--shadow-lg);
   overflow: hidden;
+  background: linear-gradient(135deg, var(--pitch-700), var(--pitch-900));
 }
-.hero-pitch {
-  position: absolute; inset: 14px;
-  border: 2px solid rgba(255,255,255,.7);
-  border-radius: 12px;
-}
-.hero-pitch::before, .hero-pitch::after {
-  content: ""; position: absolute; left: 50%; transform: translateX(-50%);
-  width: 30%; aspect-ratio: 1.2/1;
-  border: 2px solid rgba(255,255,255,.7);
-}
-.hero-pitch::before { top: -2px; border-top: 0; border-radius: 0 0 8px 8px; }
-.hero-pitch::after { bottom: -2px; border-bottom: 0; border-radius: 8px 8px 0 0; }
-.hero-center {
-  position: absolute; left: 50%; top: 50%;
-  width: 22%; aspect-ratio: 1;
-  transform: translate(-50%, -50%);
-  border: 2px solid rgba(255,255,255,.7); border-radius: 50%;
-}
-.hero-center::after {
-  content: ""; position: absolute; left: 50%; top: 50%;
-  width: 8px; height: 8px; background: rgba(255,255,255,.85);
-  border-radius: 50%; transform: translate(-50%, -50%);
-}
-.hero-mid {
-  position: absolute; top: 14px; bottom: 14px; left: 50%;
-  width: 0; border-left: 2px solid rgba(255,255,255,.7);
-}
-.hero-stripes {
-  position: absolute; inset: 0;
-  background:
-    repeating-linear-gradient(90deg, rgba(255,255,255,.04) 0 60px, transparent 60px 120px);
-  pointer-events: none;
-}
-.hero-ball {
-  position: absolute; right: -24px; bottom: -24px;
-  width: 140px; height: 140px;
-  background: radial-gradient(circle at 30% 30%, #fff, #d4dad6 70%, #b6bdb9);
-  border-radius: 50%;
-  box-shadow: 0 24px 60px rgba(0,0,0,.35), inset 0 0 0 4px rgba(0,0,0,.05);
-}
-.hero-ball::before, .hero-ball::after {
-  content: ""; position: absolute; inset: 0;
-  background:
-    radial-gradient(circle at 50% 50%, transparent 14%, rgba(0,0,0,.55) 14.5%, transparent 22%),
-    radial-gradient(circle at 18% 30%, transparent 10%, rgba(0,0,0,.45) 10.5%, transparent 18%),
-    radial-gradient(circle at 82% 30%, transparent 10%, rgba(0,0,0,.45) 10.5%, transparent 18%),
-    radial-gradient(circle at 18% 78%, transparent 10%, rgba(0,0,0,.45) 10.5%, transparent 18%),
-    radial-gradient(circle at 82% 78%, transparent 10%, rgba(0,0,0,.45) 10.5%, transparent 18%);
-  border-radius: 50%;
+.hero-art img {
+  width: 100%; height: 100%;
+  object-fit: cover; object-position: center;
+  display: block;
 }
 
 /* Stat strip */
