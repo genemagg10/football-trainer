@@ -157,7 +157,10 @@ p { margin: 0 0 1em; }
   display: inline-flex; align-items: center; justify-content: center;
   color: var(--chalk); font-weight: 800; font-size: 14px;
   box-shadow: inset 0 0 0 2px rgba(255,255,255,.15);
+  object-fit: cover;
+  flex-shrink: 0;
 }
+img.brand-mark { box-shadow: 0 0 0 1px rgba(0,0,0,.06); }
 .nav-links {
   display: flex; gap: 6px; align-items: center;
   list-style: none; padding: 0; margin: 0;
