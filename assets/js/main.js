@@ -1,4 +1,4 @@
-// Football Trainer — main.js
+// Youth Football Trainer — main.js
 // Lightweight enhancements: nav toggle, active link, tabs, smooth-scroll for in-page links.
 
 (function () {
